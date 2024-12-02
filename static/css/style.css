@@ -1,8 +1,21 @@
-body {
-    background-color: #FFF8E1;
-    font-family: Arial, sans-serif;
+/* Resetando margens e paddings padrão */
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos do body com flexbox para garantir que o rodapé fique no final */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Garante que a altura do body ocupe toda a tela */
+    background-color: #FFF8E1;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -46,6 +59,11 @@ header nav a {
 
 
 /* Ajustes para o conteúdo principal */
+
+main {
+    flex-grow: 1;
+    /* Faz com que o conteúdo principal ocupe o restante da tela */
+}
 
 main h2 {
     font-size: 2rem;
@@ -146,6 +164,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 3rem;
+    width: 100%;
 }
 
 
