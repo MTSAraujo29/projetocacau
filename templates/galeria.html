@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Galeria de Festas</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/galeria">Galeria</a>
+            <a href="/contato">Contato</a>
+            <a href="/sobre">Sobre</a>
+        </nav>
+    </header>
+    <main>
+        <div class="galeria">
+            {% for img in imagens %}
+            <div class="imagem">
+                <img src="{{ url_for('static', filename='img/' ~ img) }}" alt="Decoração de festa">
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Decorações da Cacau. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

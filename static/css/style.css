@@ -1,0 +1,177 @@
+body {
+    background-color: #FFF8E1;
+}
+
+/* Estilo para o header */
+header {
+    background-color: #5D4037; /* Marrom Escuro */
+    color: #FFF8E1; /* Texto em Creme */
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título */
+header h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    margin: 20rem;
+    text-align: center;
+    color: #5D4037;
+}
+
+/* Estilo para os links do menu */
+header nav a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FFF8E1; /* Creme */
+    color: #5D4037; /* Marrom Escuro */
+    padding: 0.8rem 1.2rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #5D4037;
+    color: #FFF8E1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sobre .perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+    
+}
+
+.sobre p {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 0.1rem 0;
+    background: #5D4037;
+    color: #FFF8E1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Efeito ao passar o mouse */
+header nav a:hover {
+    background-color: #FF8A65; /* Salmão */
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav a {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* Estilo para a galeria */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #FFF8E1; /* Creme */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.galeria .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #D7CCC8; /* Marrom Claro */
+}
+
+.galeria .imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.galeria .imagem img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo da seção de contato */
+.contato {
+    text-align: center;
+    padding: 2rem;
+    background-color: #FFF8E1; /* Creme */
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    color: #5D4037; /* Marrom Escuro */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.contato p {
+    font-size: 1.2rem;
+    color: #5D4037;
+    margin-bottom: 2rem;
+}
+
+/* Estilo para os ícones das redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais img {
+    width: 80px; /* Tamanho dos ícones */
+    height: 80px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* Efeito ao passar o mouse */
+.redes-sociais a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}

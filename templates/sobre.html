@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Decoração de Festas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sobre Mim</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/galeria">Galeria</a>
+            <a href="/contato">Contato</a>
+            <a href="/sobre">Sobre</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="sobre">
+            <img src="{{ url_for('static', filename='img/imgdacacau/cacau.png') }}" alt="Foto de Cacau" class="perfil">
+            <p>Olá, eu sou <strong>Claudia Maria</strong>, mas pode me chamar de <strong>Cacau</strong>. Sou apaixonada por deixar as pessoas felizes através da decoração de festas e eventos. Sempre gostei de fazer esse trabalho e faço com muito amor.</p>
+            <p>Tenho formação no curso de decoração realizado pela empresa <strong>Di Festa</strong>.</p>
+            <p>Faço decoração com baloes em festas a mais de <strong>15 anos</strong>, veja um pouco do meu trabalho em galeria.</p>
+            <p><em>Sempre lembre: pensou em festa, pensou em Cacau!</em></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 - Decoração de Festas por Cacau</p>
+    </footer>
+</body>
+</html>
